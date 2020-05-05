@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/survey_form_main_design.css">
+    <title>Survey Form for Rose & Lito Variety Store by PJKMT</title>
+</head>
+<body>
+    <h1 id="title" class="zoom">Rose & Lito Variety Store Survey Form</h1>
+    <!-- <p id="description" class="zoom">This is a Survey where you can tell us about our Product</p> -->
+    <p id="description" class="zoom">Please Answer Our Survey To Gather Feedback On Our Products & Services :-)</p>
+
+    <form action="#" id="survey-form" class="form-background">
+      <label id="name-label">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Please Input Your Full Name" required>
+      <br>
+      <label id="email-label">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Please Input Your Email Address" required>
+      <br>
+      <label id="number-label">Number:</label>
+      <input type="number" name="number" id="number" min="0" max="99999999999" placeholder="Please Input Your Mobile/Telephone Number" required>
+      <br>
+      <label id="product-label">Choose Product:</label>
+      <select id="dropdown" name="products" required>
+        <option value="" selected disabled>Select The Product You Want</option>
+        <option value="shampoo">Shampoo</option>
+        <option value="soap">Soap</option>
+        <option value="fabric-conditioner">Fabric Conditioner</option>
+        <option value="detergent">Detergent</option>
+      </select>
+
+      <br><br>
+      <!-- <label for="rating">Rate Our Service:</label>
+      <input type="radio" id="excellent" name="rating" value="excellent"> Excellent<br>
+      <input type="radio" id="very-good"  name="rating" value="very-good"> Very Good<br>
+      <input type="radio" id="needs-improvement"  name="rating" value="needs-improvement"> Needs Improvement -->
+      <label for="rating">Rate Our Service:</label>
+<label class="radio-button-container">Excellent
+  <input type="radio" id="excellent" name="rating" value="excellent" required>
+  <span class="radio-button-checkmark"></span>
+</label>
+<label class="radio-button-container">Very Good
+  <input type="radio" id="very-good" name="rating" value="very-good">
+  <span class="radio-button-checkmark"></span>
+</label>
+<label class="radio-button-container">Needs Improvement
+  <input type="radio" id="needs-improvement" name="rating" value="needs-improvement">
+  <span class="radio-button-checkmark"></span>
+</label>
+
+      <br>
+
+    <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> I have a bike
+    <br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"> I have a car
+    <br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"> I have a boat -->
+    <label for="products-or-services-improvement">What Product or Service would you like to see improved?</label>
+    <label class="checkbox-container">Food
+      <input type="checkbox" id="food" name="products-or-services-improvement" value="Food">
+      <span class="checkbox-checkmark"></span>
+    </label>
+    <label class="checkbox-container">Beverages
+      <input type="checkbox" id="beverages" name="products-or-services-improvement" value="Beverages">
+      <span class="checkbox-checkmark"></span>
+    </label>
+    <label class="checkbox-container">Cellphone Loading
+      <input type="checkbox" id="cellphone-loading" name="products-or-services-improvement" value="Cellphone-Loading">
+      <span class="checkbox-checkmark"></span>
+    </label>
+    <label class="checkbox-container">Others
+      <input type="checkbox" id="others" name="products-or-services-improvement" value="others">
+      <span class="checkbox-checkmark"></span>
+    </label>
+    
+    <br>
+    <label for="additional-comments-for-our-products-and-services">Additional Comments For Our Products & Services:</label>
+      <textarea name="additional-comments-for-our-products-and-services" id="additional-comments-for-our-products-and-services" cols="30" rows="10" placeholder="Enter Your Additional Comments For Our Products & Services Here :-)"></textarea>
+
+      <br>
+      <input type="submit" id="submit">
+    </form>
+    <!-- freeCodeCamp Test JS CDN -->
+    <!-- <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
+    <footer>
+      &copy Rose & Lito Variety Store
+    </footer>
+</body>
+</html>
